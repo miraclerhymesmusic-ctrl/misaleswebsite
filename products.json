@@ -1,10 +1,20 @@
 [
   {
     "id": "e1",
+    "name": "Samsung Galaxy S25 Ultra",
+    "category": "Electronics",
+    "price": "UGX 5,200,000",
+    "description": "Latest Samsung flagship smartphone.",
+    "image": "images/s25-ultra.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "e1",
     "name": "1eyeTVwallUnitBlack&Gold",
     "category": "Electronics",
     "price": "UGX 35,000",
-    "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
+    "description": "Latest Outdoor and Indoor
+    wall washer lights with Alminium Body .",
     "image": "images/1eyeTVwallUnitBlack&Gold.jpg",
     "stock": "In Stock"
   },
