@@ -1,8 +1,8 @@
 [
   {
-    "id": "e1", "name": "Samsung Galaxy S25 Ultra", "category": "Electronics",
-    "price": "UGX 5,200,000", "description": "Latest Samsung flagship smartphone with AI features and premium titanium build.",
-    "image_icon": "fa-mobile-screen", "stock": "In Stock"
+    "id": "e1", "name": "1eyeTVwallUnitBlack&Gold.jpg", "category": "Wall Lights",
+    "price": "UGX 5,200,000", "description": "Latest in/out door lights with warm light wall light flashes design and premium alminum body.",
+    "image": "images/1eyeTVwallUnitBlack&Gold.jpg", "stock": "In Stock"
   },
   {
     "id": "e2", "name": "MacBook Pro M3 Max", "category": "Electronics",
