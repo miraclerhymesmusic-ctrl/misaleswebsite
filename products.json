@@ -46,7 +46,7 @@
   },
    {
     "id": "e6",
-    "name": "3eyewalllightafn.jpg",
+    "name": "3eyewalllightafn",
     "category": "Electronics",
     "price": "UGX 25,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
@@ -55,7 +55,7 @@
   },
    {
     "id": "e7",
-    "name": "images/4eyewalllightafn.jpg",
+    "name": "images/4eyewalllightafn",
     "category": "Electronics",
     "price": "UGX 45,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
@@ -64,7 +64,7 @@
   },
    {
     "id": "e8",
-    "name": "Glasswalllight.jpg",
+    "name": "Glasswalllight",
     "category": "Electronics",
     "price": "UGX 40,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
@@ -73,7 +73,7 @@
   },
    {
     "id": "e9",
-    "name": "Goosewalllight.jpg",
+    "name": "Goosewalllight",
     "category": "Electronics",
     "price": "UGX 55,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
@@ -82,7 +82,7 @@
   },
    {
     "id": "e10",
-    "name": "Long coner light.jpg",
+    "name": "Long coner light",
     "category": "Electronics",
     "price": "UGX 35,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
@@ -91,11 +91,11 @@
   },
    {
     "id": "e11",
-    "name": "1eyeTVwallUnitBlack&Gold",
+    "name": "squarewalllightAFN",
     "category": "Electronics",
     "price": "UGX 35,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
-    "image": "images/Gu10led1eyeCylindricalWallLight.jpg",
+    "image": "images/squarewalllightAFN.jpg",
     "stock": "In Stock"
   },
    {
