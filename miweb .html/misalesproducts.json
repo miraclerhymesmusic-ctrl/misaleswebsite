@@ -1,0 +1,62 @@
+[
+  {
+    "id": "e1", "name": "Samsung Galaxy S25 Ultra", "category": "Electronics",
+    "price": "UGX 5,200,000", "description": "Latest Samsung flagship smartphone with AI features and premium titanium build.",
+    "image_icon": "fa-mobile-screen", "stock": "In Stock"
+  },
+  {
+    "id": "e2", "name": "MacBook Pro M3 Max", "category": "Electronics",
+    "price": "UGX 12,500,000", "description": "16-inch display, 36GB RAM, ultimate performance for creators.",
+    "image_icon": "fa-laptop", "stock": "Low Stock"
+  },
+  {
+    "id": "e3", "name": "Sony WH-1000XM5 Headphones", "category": "Electronics",
+    "price": "UGX 1,400,000", "description": "Industry-leading noise cancellation and high-res audio.",
+    "image_icon": "fa-headphones", "stock": "In Stock"
+  },
+  {
+    "id": "e4", "name": "Apple iPad Pro 12.9", "category": "Electronics",
+    "price": "UGX 4,800,000", "description": "Liquid Retina XDR display, M2 chip, perfect for digital art.",
+    "image_icon": "fa-tablet-screen-button", "stock": "In Stock"
+  },
+  {
+    "id": "h1", "name": "Digital Air Fryer 8L", "category": "Home & Kitchen",
+    "price": "UGX 450,000", "description": "Energy-saving smart air fryer with touch digital controls.",
+    "image_icon": "fa-fire-burner", "stock": "In Stock"
+  },
+  {
+    "id": "h2", "name": "SmartBlend Pro 1200W", "category": "Home & Kitchen",
+    "price": "UGX 320,000", "description": "Heavy-duty commercial grade blender for smoothies and soups.",
+    "image_icon": "fa-blender", "stock": "In Stock"
+  },
+  {
+    "id": "h3", "name": "Espresso Coffee Machine", "category": "Home & Kitchen",
+    "price": "UGX 1,100,000", "description": "15-bar pressure pump with milk frother for barista-quality coffee.",
+    "image_icon": "fa-mug-hot", "stock": "In Stock"
+  },
+  {
+    "id": "i1", "name": "Modern LED Wall Mirror", "category": "Interior Decoration",
+    "price": "UGX 650,000", "description": "Anti-fog smart mirror with adjustable warm/cool lighting.",
+    "image_icon": "fa-border-all", "stock": "In Stock"
+  },
+  {
+    "id": "i2", "name": "Luxury Crystal Chandelier", "category": "Interior Decoration",
+    "price": "UGX 1,800,000", "description": "Elegant living room lighting fixture with premium glass crystals.",
+    "image_icon": "fa-lightbulb", "stock": "Pre-order"
+  },
+  {
+    "id": "s1", "name": "Smart WiFi Security Camera", "category": "Smart Home",
+    "price": "UGX 220,000", "description": "360-degree PTZ camera with night vision and motion tracking.",
+    "image_icon": "fa-video", "stock": "In Stock"
+  },
+  {
+    "id": "s2", "name": "Biometric Smart Door Lock", "category": "Smart Home",
+    "price": "UGX 850,000", "description": "Fingerprint, passcode, and app-controlled home entry system.",
+    "image_icon": "fa-lock", "stock": "In Stock"
+  },
+  {
+    "id": "l1", "name": "Premium Leather Travel Duffle", "category": "Lifestyle",
+    "price": "UGX 280,000", "description": "Water-resistant weekend travel bag with shoe compartment.",
+    "image_icon": "fa-briefcase", "stock": "In Stock"
+  }
+]
