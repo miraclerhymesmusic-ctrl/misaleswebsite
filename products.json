@@ -1,7 +1,7 @@
 [
   {
     "id": "e1",
-    "name": "1eyeTVwallUnitBlack&Gold.jpg",
+    "name": "1eyeTVwallUnitBlack&Gold",
     "category": "Electronics",
     "price": "UGX 35,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
@@ -10,11 +10,11 @@
   },
   {
     "id": "e2",
-    "name": "1eyeTVwallUnitBlack&Gold.jpg",
+    "name": "Gu10led1eyeCylindricalWallLight",
     "category": "Electronics",
     "price": "UGX 5,200,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
-    "image": "images/1eyeTVwallUnitBlack&Gold.jpg",
+    "image": "images/Gu10led1eyeCylindricalWallLight.jpg",
     "stock": "In Stock"
   },
   {
