@@ -1,0 +1,11 @@
+[
+  {
+    "id": "e1",
+    "name": "Samsung Galaxy S25 Ultra",
+    "category": "Electronics",
+    "price": "UGX 5,200,000",
+    "description": "Latest Samsung flagship smartphone.",
+    "image": "images/s25-ultra.jpg",
+    "stock": "In Stock"
+  }
+]
