@@ -121,6 +121,9 @@
             .product-grid { grid-template-columns: repeat(3, 1fr); max-width: 1200px; margin: 0 auto; }
             .hero { max-width: 1160px; margin: 2rem auto; }
         }
+        
+        /* Loading Spinner */
+        .loader-container { text-align: center; padding: 4rem; color: var(--primary); }
     </style>
 </head>
 <body id="top">
@@ -157,7 +160,11 @@
     </div>
 
     <main class="product-grid" id="productGrid">
-        </main>
+        <div class="loader-container">
+            <i class="fa-solid fa-circle-notch fa-spin fa-2x"></i>
+            <p style="margin-top: 1rem; color: var(--text-gray);">Loading catalogue...</p>
+        </div>
+    </main>
 
     <div class="floating-wa" onclick="openWhatsApp('Hello MISALES, I need help navigating your catalogue.')">
         <i class="fa-brands fa-whatsapp"></i>
@@ -183,19 +190,8 @@
         const WA_NUMBER = "+256700964242";
         const WA_BASE_URL = `https://wa.me/${WA_NUMBER.replace('+', '')}?text=`;
 
-        // JSON Product Database updated to use real image paths
-        const productsDatabase = [
-            { id: "e1", name: "Samsung Galaxy S25 Ultra", category: "Electronics", price: "UGX 5,200,000", description: "Latest Samsung flagship smartphone with AI features.", image: "images/s25-ultra.jpg", stock: "In Stock" },
-            { id: "e2", name: "MacBook Pro M3 Max", category: "Electronics", price: "UGX 12,500,000", description: "16-inch display, 36GB RAM, ultimate performance.", image: "images/macbook-pro.jpg", stock: "Low Stock" },
-            { id: "e3", name: "Sony WH-1000XM5", category: "Electronics", price: "UGX 1,400,000", description: "Industry-leading noise cancellation.", image: "images/sony-headphones.jpg", stock: "In Stock" },
-            { id: "h1", name: "Digital Air Fryer 8L", category: "Home & Kitchen", price: "UGX 450,000", description: "Energy-saving smart air fryer.", image: "images/airfryer.jpg", stock: "In Stock" },
-            { id: "h2", name: "SmartBlend Pro 1200W", category: "Home & Kitchen", price: "UGX 320,000", description: "Heavy-duty commercial grade blender.", image: "images/blender.jpg", stock: "In Stock" },
-            { id: "i1", name: "Modern LED Wall Mirror", category: "Interior Decoration", price: "UGX 650,000", description: "Anti-fog smart mirror with adjustable lighting.", image: "images/led-mirror.jpg", stock: "In Stock" },
-            { id: "i2", name: "Luxury Crystal Chandelier", category: "Interior Decoration", price: "UGX 1,800,000", description: "Elegant living room lighting fixture.", image: "images/chandelier.jpg", stock: "Pre-order" },
-            { id: "s1", name: "Smart WiFi Security Camera", category: "Smart Home", price: "UGX 220,000", description: "360-degree PTZ camera with night vision.", image: "images/smart-camera.jpg", stock: "In Stock" },
-            { id: "s2", name: "Biometric Smart Door Lock", category: "Smart Home", price: "UGX 850,000", description: "Fingerprint, passcode, and app-controlled entry.", image: "images/smart-lock.jpg", stock: "In Stock" },
-            { id: "l1", name: "Premium Leather Travel Duffle", category: "Lifestyle", price: "UGX 280,000", description: "Water-resistant weekend travel bag.", image: "images/travel-duffle.jpg", stock: "In Stock" }
-        ];
+        // Global variable to hold data fetched from JSON
+        let productsDatabase = [];
 
         // Core Functions
         const openWhatsApp = (message) => {
@@ -204,7 +200,6 @@
 
         const scrollToTop = () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            // Highlight home icon on bottom nav
             document.querySelectorAll('.nav-item').forEach(btn => btn.classList.remove('active'));
             document.querySelector('.nav-item').classList.add('active');
         };
@@ -224,7 +219,6 @@
                 
                 const card = document.createElement('div');
                 card.className = 'product-card';
-                // Added onerror to automatically load a placeholder if the local image is missing
                 card.innerHTML = `
                     <div class="product-header">
                         <div class="product-img">
@@ -275,7 +269,7 @@
             el.innerText = val;
         };
 
-        // WhatsApp Triggers mapped strictly to MISSION requirements
+        // WhatsApp Triggers
         window.triggerHeart = (productName) => {
             const msg = `Hello MISALES, I liked this item:\n${productName}\nPlease send me more details.`;
             openWhatsApp(msg);
@@ -325,9 +319,38 @@
             });
         });
 
+        // ----------------------------------------------------
+        // FETCH DATA FROM EXTERNAL JSON FILE
+        // ----------------------------------------------------
+        const loadProducts = async () => {
+            try {
+                // Fetches from products.json in the same folder
+                const response = await fetch('products.json');
+                
+                if (!response.ok) {
+                    throw new Error(`Failed to load data. Status: ${response.status}`);
+                }
+                
+                productsDatabase = await response.json();
+                renderProducts(productsDatabase);
+                
+            } catch (error) {
+                console.error("Error fetching products:", error);
+                grid.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fa-solid fa-triangle-exclamation" style="color: #FF3B30;"></i>
+                        <h2>Catalogue Offline</h2>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                            Make sure <strong>products.json</strong> is in the same folder as this file.<br><br>
+                            <em>Note: If you are opening this directly from your computer (file://), your browser might block the data from loading due to security settings. To view it locally, you need to use a local development server or deploy it to a live environment (like GitHub Pages).</em>
+                        </p>
+                    </div>`;
+            }
+        };
+
         // Initialization
         document.addEventListener('DOMContentLoaded', () => {
-            renderProducts(productsDatabase);
+            loadProducts();
         });
 
     </script>
