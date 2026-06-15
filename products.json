@@ -1,6 +1,6 @@
 [
   {
-    "id": "e",
+    "id": "e1",
     "name": "Samsung Galaxy S25 Ultra",
     "category": "Electronics",
     "price": "UGX 5,200,000",
@@ -9,7 +9,7 @@
     "stock": "In Stock"
   },
   {
-    "id": "e1",
+    "id": "e2",
     "name": "1eyeTVwallUnitBlack&Gold",
     "category": "Electronics",
     "price": "UGX 35,000",
@@ -18,7 +18,7 @@
     "stock": "In Stock"
   },
   {
-    "id": "e1",
+    "id": "e3",
     "name": "1eyeTVwallUnitBlack&Gold",
     "category": "Electronics",
     "price": "UGX 35,000",
@@ -27,7 +27,7 @@
     "stock": "In Stock"
   },
   {
-    "id": "e1",
+    "id": "e4",
     "name": "1eyeTVwallUnitBlack&Gold",
     "category": "Electronics",
     "price": "UGX 35,000",
