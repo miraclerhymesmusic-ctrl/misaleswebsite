@@ -235,6 +235,33 @@
   },
   {
     "id": "v4",
+    "name": "550-W SOLAR PANNELL",
+    "category": "VELLMAX",
+    "price": "UGX 35,000",
+    "description": "vellmax-100w-led-flood-light",
+    "image": "images/550-W SOLAR PANNELL.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v5",
+    "name": "vellmax-30w-solar-gate-light",
+    "category": "VELLMAX",
+    "price": "UGX 35,000",
+    "description": "vellmax-30w-solar-gate-light",
+    "image": "images/vellmax-30w-solar-gate-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v6",
+    "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "category": "",
+    "price": "UGX 35,000",
+    "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v7",
     "name": "vellmax-100w-led-flood-light",
     "category": "VELLMAX",
     "price": "UGX 35,000",
@@ -243,7 +270,88 @@
     "stock": "In Stock"
   },
   {
-    "id": "v5",
+    "id": "v8",
+    "name": "vellmax-30w-solar-gate-light",
+    "category": "VELLMAX",
+    "price": "UGX 35,000",
+    "description": "vellmax-30w-solar-gate-light",
+    "image": "images/vellmax-30w-solar-gate-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v9",
+    "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "category": "",
+    "price": "UGX 35,000",
+    "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v10",
+    "name": "vellmax-100w-led-flood-light",
+    "category": "VELLMAX",
+    "price": "UGX 35,000",
+    "description": "vellmax-100w-led-flood-light",
+    "image": "images/vellmax-100w-led-flood-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v11",
+    "name": "vellmax-30w-solar-gate-light",
+    "category": "VELLMAX",
+    "price": "UGX 35,000",
+    "description": "vellmax-30w-solar-gate-light",
+    "image": "images/vellmax-30w-solar-gate-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v12",
+    "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "category": "",
+    "price": "UGX 35,000",
+    "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v13",
+    "name": "vellmax-100w-led-flood-light",
+    "category": "VELLMAX",
+    "price": "UGX 35,000",
+    "description": "vellmax-100w-led-flood-light",
+    "image": "images/vellmax-100w-led-flood-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v14",
+    "name": "vellmax-30w-solar-gate-light",
+    "category": "VELLMAX",
+    "price": "UGX 35,000",
+    "description": "vellmax-30w-solar-gate-light",
+    "image": "images/vellmax-30w-solar-gate-light.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "v15",
+    "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "category": "",
+    "price": "UGX 35,000",
+    "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
+    "stock": "In Stock"
+  },
+   {
+    "id": "vs1",
+    "name": "550-W SOLAR PANNELL",
+    "category": "VELLMAX",
+    "price": "UGX 35,000",
+    "description": "vellmax-100w-led-flood-light",
+    "image": "images/550-W SOLAR PANNELL.jpg",
+    "stock": "In Stock"
+  },
+  {
+    "id": "vs2",
     "name": "vellmax-30w-solar-gate-light",
     "category": "VELLMAX",
     "price": "UGX 35,000",
