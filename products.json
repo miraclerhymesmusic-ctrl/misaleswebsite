@@ -20,25 +20,25 @@
   {
     "id": "v2",
     "name": "vellmax-30w-solar-gate-light",
-    "category": "Electronics",
+    "category": "VELLMAX",
     "price": "UGX 35,000",
     "description": "vellmax-30w-solar-gate-light",
     "image": "images/vellmax-30w-solar-gate-light.jpg",
     "stock": "In Stock"
   },
   {
-    "id": "e4",
-    "name": "Gu10led1eyeCylindrical",
-    "category": "Electronics",
+    "id": "v3",
+    "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "category": "",
     "price": "UGX 35,000",
-    "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
-    "image": "images/Gu10led1eyeCylindricalWallLight.jpg",
+    "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
     "stock": "In Stock"
   },
    {
     "id": "e5",
     "name": "3eyestepsrgb&warmafn",
-    "category": "Electronics",
+    "category": "VELLMAX",
     "price": "UGX 35,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
     "image": "images/3eyestepsrgb&warmafn.jpg",
