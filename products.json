@@ -10,20 +10,20 @@
   },
   {
     "id": "e2",
-    "name": "1eyewalllight",
+    "name": "1eyerectangle",
     "category": "Electronics",
     "price": "UGX 55,000",
-    "description": "1eyewalllightafnrectangle&circleAFN.jpg.",
-    "image": "images/1eyewalllightafnrectangle&circleAFN.jpg",
+    "description": "1eyerectangle",
+    "image": "images/1eyerectangle.jpg",
     "stock": "In Stock"
   },
   {
     "id": "e3",
-    "name": "1eyewalllight",
+    "name": "1eyeTVwallUnitBlack&Gold",
     "category": "Electronics",
     "price": "UGX 55,000",
-    "description": "1eyewalllightafnrectangle&circleAFN.jpg.",
-    "image": "images/1eyewalllightafnrectangle&circleAFN.jpg",
+    "description": "images/1eyeTVwallUnitBlack&Gold.jpg",
+    "image": "images/1eyeTVwallUnitBlack&Gold.jpg",
     "stock": "In Stock"
   },
   {
@@ -231,15 +231,6 @@
     "price": "UGX 35,000",
     "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
     "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
-    "stock": "In Stock"
-  },
-  {
-    "id": "v4",
-    "name": "550-W SOLAR PANNELL",
-    "category": "VELLMAX",
-    "price": "UGX 35,000",
-    "description": "vellmax-100w-led-flood-light",
-    "image": "images/550-W SOLAR PANNELL.jpg",
     "stock": "In Stock"
   },
   {
