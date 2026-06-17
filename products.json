@@ -254,7 +254,7 @@
   {
     "id": "v6",
     "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
-    "category": "",
+    "category": "VELLMAX",
     "price": "UGX 35,000",
     "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
     "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
@@ -281,7 +281,7 @@
   {
     "id": "v9",
     "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
-    "category": "",
+    "category": "VELLMAX",
     "price": "UGX 35,000",
     "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
     "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
@@ -308,7 +308,7 @@
   {
     "id": "v12",
     "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
-    "category": "",
+    "category": "VELLMAX",
     "price": "UGX 35,000",
     "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
     "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
@@ -362,7 +362,7 @@
   {
     "id": "vs3",
     "name": "550-W SOLAR PANNELL",
-    "category": "",
+    "category": "VELLMAX",
     "price": "UGX 35,000",
     "description": "550-W SOLAR PANNELL",
     "image": "images/550-W SOLAR PANNELL.jpg",
@@ -416,7 +416,7 @@
   {
     "id": "vs9",
     "name": "50KW High Voltage C&I Inverter",
-    "category": "",
+    "category": "VELLMAX",
     "price": "UGX 35,000",
     "description": "50KW High Voltage C&I Inverter",
     "image": "images/50KW High Voltage C&I Inverter.jpg",
@@ -443,7 +443,7 @@
   {
     "id": "vs12",
     "name": "6.2KW LV INVERTER",
-    "category": "",
+    "category": "VELLMAX",
     "price": "UGX 35,000",
     "description": "6.2KW LV INVERTER",
     "image": "images/6.2KW LV INVERTER.jpg",
