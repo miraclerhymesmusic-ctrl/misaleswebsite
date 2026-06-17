@@ -406,47 +406,47 @@
   },
   {
     "id": "vs8",
-    "name": "vellmax-30w-solar-gate-light",
+    "name": "100KWH C$ I BATTERY",
     "category": "VELLMAX",
     "price": "UGX 35,000",
-    "description": "vellmax-30w-solar-gate-light",
-    "image": "images/vellmax-30w-solar-gate-light.jpg",
+    "description": "100KWH C$ I BATTERY",
+    "image": "images/100KWH C$ I BATTERY.jpg",
     "stock": "In Stock"
   },
   {
     "id": "vs9",
-    "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "name": "50KW High Voltage C&I Inverter",
     "category": "",
     "price": "UGX 35,000",
-    "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
-    "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
+    "description": "50KW High Voltage C&I Inverter",
+    "image": "images/50KW High Voltage C&I Inverter.jpg",
     "stock": "In Stock"
   },
   {
     "id": "vs10",
-    "name": "vellmax-100w-led-flood-light",
+    "name": "6.2kw mppt",
     "category": "VELLMAX",
     "price": "UGX 35,000",
-    "description": "vellmax-100w-led-flood-light",
-    "image": "images/vellmax-100w-led-flood-light.jpg",
+    "description": "6.2kw mppt",
+    "image": "images/6.2kw mppt.jpg",
     "stock": "In Stock"
   },
   {
-    "id": "v14",
-    "name": "vellmax-30w-solar-gate-light",
+    "id": "vs11",
+    "name": "11KW INVERTER",
     "category": "VELLMAX",
     "price": "UGX 35,000",
-    "description": "vellmax-30w-solar-gate-light",
-    "image": "images/vellmax-30w-solar-gate-light.jpg",
+    "description": "11KW INVERTER",
+    "image": "images/11KW INVERTER.jpg",
     "stock": "In Stock"
   },
   {
-    "id": "v15",
-    "name": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
+    "id": "vs12",
+    "name": "6.2KW LV INVERTER",
     "category": "",
     "price": "UGX 35,000",
-    "description": "vellmax-30watts-dusk-to-dawn-solar-gardengate-light",
-    "image": "images/vellmax-30watts-dusk-to-dawn-solar-gardengate-light.jpg",
+    "description": "6.2KW LV INVERTER",
+    "image": "images/6.2KW LV INVERTER.jpg",
     "stock": "In Stock"
   }
 ]
