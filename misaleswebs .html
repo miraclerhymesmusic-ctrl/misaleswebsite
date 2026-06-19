@@ -337,8 +337,8 @@
         // ----------------------------------------------------
         const loadProducts = async () => {
             try {
-                // Changed to relative path which works better on GitHub Pages
-                const response = await fetch('./products.json');
+                // Fetches from products.json in the same folder
+                const response = await fetch('products.json');
                 
                 if (!response.ok) {
                     throw new Error(`Failed to load data. Status: ${response.status}`);
