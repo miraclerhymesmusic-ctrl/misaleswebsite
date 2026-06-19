@@ -338,7 +338,7 @@
         const loadProducts = async () => {
             try {
                 // Changed to relative path which works better on GitHub Pages
-                const response = await fetch('./products (1).json');
+                const response = await fetch('./misales/products (1).json');
                 
                 if (!response.ok) {
                     throw new Error(`Failed to load data. Status: ${response.status}`);
@@ -354,7 +354,7 @@
                         <i class="fa-solid fa-triangle-exclamation" style="color: #FF3B30;"></i>
                         <h2>Catalogue Offline</h2>
                         <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-                            Make sure <strong>products (1).json</strong> is in the same folder as this file.<br><br>
+                            Make sure <strong>misales/products (1).json</strong> is in the same folder as this file.<br><br>
                             <em>Note: If you are opening this directly from your computer (file://), your browser might block the data from loading due to security settings. To view it locally, you need to use a local development server or deploy it to a live environment (like GitHub Pages).</em>
                         </p>
                     </div>`;
