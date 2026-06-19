@@ -3,12 +3,11 @@
     "id": "e1",
     "name": "1eyewalllight",
     "category": "Electronics",
-    "price": "UGX 55,000 1pc",
-    "description": "1eyewalllightafnrectangle&circleAFN.jpg.",
+    "price": "UGX 55,000",
+    "description": "rectangle&circleAFN",
     "image": "images/1eyewalllightafnrectangle&circleAFN.jpg",
-    "MinOder": "MOQ-1pc/ctn",
     "stock": "In Stock"
-    "moq": 10
+    "moq": "10"
   },
   {
     "id": "e2",
