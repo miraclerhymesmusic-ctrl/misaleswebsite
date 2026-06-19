@@ -239,6 +239,9 @@
                             <h3 class="product-title">${prod.name}</h3>
                             <p class="product-desc">${prod.description}</p>
                             <div class="product-price">${prod.price}</div>
+                            <div class="product-moq" style="font-size: 0.8rem; color: var(--text-gray); margin-top: 0.25rem;">
+                                MOQ: <span style="font-weight: 600; color: var(--black);">${prod.moq || 1}</span> unit(s)
+                            </div>
                             <div class="stock-status" style="color: ${stockColor}">
                                 <i class="fa-solid fa-circle-check"></i> ${prod.stock}
                             </div>
@@ -334,8 +337,8 @@
         // ----------------------------------------------------
         const loadProducts = async () => {
             try {
-                // Fetches from products.json in the same folder
-                const response = await fetch('products.json');
+                // Changed to relative path which works better on GitHub Pages
+                const response = await fetch('./products.json');
                 
                 if (!response.ok) {
                     throw new Error(`Failed to load data. Status: ${response.status}`);
