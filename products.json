@@ -6,7 +6,7 @@
     "price": "UGX 55,000 1pc",
     "description": "1eyewalllightafnrectangle&circleAFN.jpg.",
     "image": "images/1eyewalllightafnrectangle&circleAFN.jpg",
-    "Quantity": "Per 1pc/ctn",
+    "MinOder": "MOQ-1pc/ctn",
     "stock": "In Stock"
   },
   {
