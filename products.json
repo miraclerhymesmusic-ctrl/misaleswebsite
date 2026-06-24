@@ -7,13 +7,12 @@
     "price": "UGX 55,000",
     "description": "rectangle&circleAFN",
     "stock": "In Stock",
-    "moq": 1
-    "image": [
-    "img11eyewalllightafnrectanglecircleAFN.jpg",
-    "img2.jpg",
-    "product.gif"
-]
-
+    "moq": 1,
+    "images": [
+      "images/img11eyewalllightafnrectanglecircleAFN.jpg",
+      "images/img2.jpg",
+      "images/product.gif"
+    ]
   },
   {
     "id": "e2",
