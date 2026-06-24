@@ -229,10 +229,11 @@
                 
                 const card = document.createElement('div');
                 card.className = 'product-card';
+                // I have REMOVED the placeholder fallback so it reads strictly from JSON
                 card.innerHTML = `
                     <div class="product-header">
                         <div class="product-img">
-                            <img src="${prod.image}" alt="${prod.name}" onerror="this.src='https://placehold.co/120x120/E5E5EA/7B2FF7?text=No+Image'">
+                            <img src="${prod.image}" alt="${prod.name}">
                         </div>
                         <div class="product-info">
                             <span class="product-cat">${prod.category}</span>
@@ -337,8 +338,8 @@
         // ----------------------------------------------------
         const loadProducts = async () => {
             try {
-                // Fetches from products.json in the same folder
-                const response = await fetch('products.json');
+                // Ensure we use relative path for GitHub Pages
+                const response = await fetch('./products.json');
                 
                 if (!response.ok) {
                     throw new Error(`Failed to load data. Status: ${response.status}`);
