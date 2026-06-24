@@ -17,6 +17,7 @@
     "description": "1eyerectangle",
     "image": "images/1eyerectangle.jpg",
     "stock": "In Stock"
+    "moq": 10
   },
   {
     "id": "e3",
@@ -26,6 +27,7 @@
     "description": "images/1eyeTVwallUnitBlack&Gold.jpg",
     "image": "images/1eyeTVwallUnitBlack&Gold.jpg",
     "stock": "In Stock"
+    "moq": 5
   },
   {
     "id": "e4",
@@ -35,6 +37,7 @@
     "description": "Gu10led1eyeCylindricalWallLight",
     "image": "images/Gu10led1eyeCylindricalWallLight.jpg",
     "stock": "In Stock"
+    "moq": 59
   },
    {
     "id": "e5",
