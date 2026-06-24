@@ -2,12 +2,19 @@
   {
     "id": "e1",
     "name": "1eyewalllight",
-    "category": "Electronics",
+    "majorCategory": "Electronics",
+    "subcategory": "Speakers",
     "price": "UGX 55,000",
     "description": "rectangle&circleAFN",
-    "image": "images/1eyewalllightafnrectanglecircleAFN.jpg",
+    "image": 
     "stock": "In Stock",
     "moq": 1
+    "images": [
+    "img1"images/1eyewalllightafnrectanglecircleAFN.jpg",
+    "img2.jpg",
+    "product.gif"
+]
+
   },
   {
     "id": "e2",
