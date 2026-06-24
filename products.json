@@ -5,9 +5,9 @@
     "category": "Electronics",
     "price": "UGX 55,000",
     "description": "rectangle&circleAFN",
-    "image": "images/1eyewalllightafnrectangle&circleAFN.jpg",
+    "image": "images/1eyewalllightafnrectanglecircleAFN.jpg",
     "stock": "In Stock",
-    "moq": 5
+    "moq": 1
   },
   {
     "id": "e2",
@@ -17,7 +17,6 @@
     "description": "1eyerectangle",
     "image": "images/1eyerectangle.jpg",
     "stock": "In Stock"
-    "moq": 10
   },
   {
     "id": "e3",
@@ -27,7 +26,6 @@
     "description": "images/1eyeTVwallUnitBlack&Gold.jpg",
     "image": "images/1eyeTVwallUnitBlack&Gold.jpg",
     "stock": "In Stock"
-    "moq": 5
   },
   {
     "id": "e4",
@@ -37,7 +35,6 @@
     "description": "Gu10led1eyeCylindricalWallLight",
     "image": "images/Gu10led1eyeCylindricalWallLight.jpg",
     "stock": "In Stock"
-    "moq": 59
   },
    {
     "id": "e5",
@@ -45,7 +42,7 @@
     "category": "Electronics",
     "price": "UGX 35,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
-    "image": "images/3eyestepsrgb&warmafn.jpg",
+    "image": "images/3eyestepsrgbwarmafn.jpg",
     "stock": "In Stock"
   },
    {
@@ -90,7 +87,7 @@
     "category": "Electronics",
     "price": "UGX 35,000",
     "description": "Latest Outdoor and Indoor wall washer lights with Alminium Body .",
-    "image": "images/long coner light.jpg",
+    "image": "images/longconerlight.jpg",
     "stock": "In Stock"
   },
    {
