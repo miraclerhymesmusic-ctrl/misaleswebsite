@@ -21,7 +21,8 @@
     "price": "UGX 55,000",
     "description": "1eyerectangle",
     "image": "images/1eyerectangle.jpg",
-    "stock": "In Stock"
+    "stock": "In Stock",
+    "moq": 10,
   },
   {
     "id": "e3",
