@@ -42,7 +42,7 @@
 
         /* Existing Reset & Base Setup */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; }
-        body { background-color: var(--bg-light); color: var(--black); line-height: 1.5; padding-bottom: 80px; transition: background-color 0.3s, color 0.3s; }
+        body { background-color: var(--bg-light); color: var(--black); line-height: 1.5; padding-bottom: 80px; transition: background-color 0.3s, color 0.3s; overflow-x: hidden; }
         a { text-decoration: none; color: inherit; }
         ul { list-style: none; }
 
@@ -122,30 +122,30 @@
         .pill.active { background: var(--primary); color: #FFF; border-color: var(--primary); box-shadow: 0 4px 12px rgba(123, 47, 247, 0.3); }
 
         /* Existing Product Grid & Cards */
-        .product-grid { display: grid; gap: 1rem; padding: 0 1rem; }
-        .product-card { background: var(--white); border-radius: var(--radius-lg); padding: 1rem; display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--shadow-sm); position: relative; width: 100%; box-sizing: border-box; overflow: hidden; }
-        .product-header { display: flex; gap: 1rem; width: 100%; }
+        .product-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; padding: 0 1rem; max-width: 100%; overflow-x: hidden; }
+        .product-card { background: var(--white); border-radius: var(--radius-lg); padding: 1rem; display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--shadow-sm); position: relative; width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box; overflow: hidden; }
+        .product-header { display: flex; gap: 1rem; width: 100%; min-width: 0; }
         .product-img { width: 110px; height: 110px; background: var(--bg-light); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; cursor: pointer; position: relative; }
         .product-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .img-badge { position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.6); color: white; font-size: 0.65rem; padding: 2px 6px; border-radius: 10px; }
         
-        .product-info { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+        .product-info { flex: 1; display: flex; flex-direction: column; min-width: 0; max-width: 100%; }
         .product-cat { font-size: 0.7rem; color: var(--text-gray); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; margin-bottom: 0.25rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .product-title { font-weight: 700; font-size: 1.05rem; line-height: 1.3; margin-bottom: 0.25rem; color: var(--black); word-wrap: break-word; overflow-wrap: break-word; }
         .product-desc { font-size: 0.8rem; color: var(--text-gray); margin-bottom: 0.5rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; word-wrap: break-word; }
         .product-price { font-weight: 800; font-size: 1.15rem; color: var(--primary); margin-top: auto; }
         .stock-status { font-size: 0.75rem; color: var(--wa-green); display: flex; align-items: center; gap: 0.3rem; margin-top: 0.25rem; font-weight: 500; }
         
-        .product-controls { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem; }
-        .action-left { display: flex; align-items: center; gap: 1rem; }
+        .product-controls { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem; min-width: 0; flex-wrap: wrap; gap: 0.5rem; }
+        .action-left { display: flex; align-items: center; gap: 1rem; min-width: 0; }
         .btn-heart { background: transparent; border: none; font-size: 1.5rem; color: #ccc; cursor: pointer; transition: var(--transition); }
         .btn-heart:active { transform: scale(0.9); }
         .qty-selector { display: flex; align-items: center; background: var(--bg-light); border-radius: 20px; padding: 0.25rem; }
         .qty-btn { width: 28px; height: 28px; border-radius: 50%; border: none; background: var(--white); color: var(--black); font-weight: bold; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); }
         .qty-val { width: 30px; text-align: center; font-weight: 600; font-size: 0.9rem; color: var(--black); }
 
-        .action-buttons { display: flex; gap: 0.5rem; width: 100%; margin-top: 0.5rem; }
-        .btn { flex: 1; padding: 0.75rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.85rem; border: none; cursor: pointer; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: var(--transition); white-space: nowrap; }
+        .action-buttons { display: flex; gap: 0.5rem; width: 100%; min-width: 0; margin-top: 0.5rem; }
+        .btn { flex: 1; min-width: 0; padding: 0.75rem; border-radius: var(--radius-md); font-weight: 600; font-size: 0.85rem; border: none; cursor: pointer; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: var(--transition); white-space: nowrap; }
         .btn-add { background: var(--white); border: 1px solid var(--primary); color: var(--primary); }
         .btn-add.added { background: var(--primary); color: #FFF; border: 1px solid var(--primary); }
         .btn-buy { background: var(--primary); color: #FFF; box-shadow: 0 4px 12px rgba(123, 47, 247, 0.2); }
@@ -254,6 +254,32 @@
         .subscribe-form input::placeholder { color: rgba(255,255,255,0.7); }
         .subscribe-form button { background: #FFF; color: var(--primary); border: none; padding: 0.5rem 1.75rem; border-radius: 25px; font-weight: 700; cursor: pointer; transition: var(--transition); }
         .subscribe-form button:hover { transform: scale(1.05); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+        @media (max-width: 768px) {
+            .subscribe-form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 100%;
+                gap: 0.5rem;
+                background: transparent;
+                border: none;
+                padding: 0;
+            }
+            .subscribe-form input {
+                width: 100%;
+                max-width: 100%;
+                background: rgba(255,255,255,0.2);
+                border: 1px solid rgba(255,255,255,0.3);
+                border-radius: 25px;
+                box-sizing: border-box;
+            }
+            .subscribe-form button {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+        }
 
         /* Footer Main Columns */
         .footer-main { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
@@ -411,9 +437,9 @@
         <div class="footer-subscribe">
             <h2>Get Exclusive Deals First</h2>
             <p>Join 50,000+ subscribers. No spam. Just drops, discounts, and new arrivals.</p>
-            <div class="subscribe-form">
-                <input type="email" placeholder="your@email.com">
-                <button type="button">Subscribe</button>
+            <div class="subscribe-form" id="subscribeForm">
+                <input type="email" id="subscribeEmail" placeholder="your@email.com" required>
+                <button type="button" id="subscribeBtn" onclick="submitSubscribeEmail()">Subscribe</button>
             </div>
         </div>
 
@@ -423,11 +449,12 @@
                 <div class="logo">MISALES.</div>
                 <p class="footer-desc">Smart Shopping For Modern Living.<br>Premium electronics, appliances, home improvement and lifestyle products delivered directly to your doorstep.</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" id="social-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" id="social-facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" id="social-tiktok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" id="social-x" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" id="social-instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" id="social-phone"><i class="fa-solid fa-phone"></i></a>
                 </div>
             </div>
             
@@ -549,7 +576,7 @@
         <button class="gallery-close" onclick="closeGallery()"><i class="fa-solid fa-xmark"></i></button>
         <button class="gallery-nav gallery-prev" onclick="changeGalleryImage(-1)"><i class="fa-solid fa-chevron-left"></i></button>
         <div class="gallery-img-container" id="gallerySwipeArea">
-            <img src="" class="gallery-img" id="galleryMainImage" alt="Gallery">
+            <img src="" class="gallery-img" id="galleryMainImage" alt="Gallery" onerror="this.onerror=null;this.src='images/placeholder.jpg';">
         </div>
         <button class="gallery-nav gallery-next" onclick="changeGalleryImage(1)"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="gallery-dots" id="galleryDots"></div>
@@ -559,6 +586,16 @@
         // Data & Core Configurations
         const WA_NUMBER = "+256700964242";
         const WA_BASE_URL = `https://wa.me/${WA_NUMBER.replace('+', '')}?text=`;
+
+        // NEW: Social Links Configuration — fill in real URLs below
+        const SOCIAL_LINKS = {
+            whatsapp: "https://wa.me/256700964242",
+            facebook: "",
+            tiktok: "",
+            instagram: "",
+            x: "",
+            phone: "+256700964242"
+        };
         let productsDatabase = [];
         
         // Master Categories
@@ -577,6 +614,22 @@
         // Utility Functions
         const openWhatsApp = (message) => {
             window.open(WA_BASE_URL + encodeURIComponent(message), '_blank');
+        };
+
+        // NEW: Email Subscribe -> WhatsApp lead generation
+        window.submitSubscribeEmail = () => {
+            const input = document.getElementById('subscribeEmail');
+            const email = input.value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!email || !emailPattern.test(email)) {
+                input.focus();
+                return;
+            }
+
+            const msg = `Hello MISALES,\n\nI would like to subscribe for updates.\n\nEmail:\n${email}\n\nPlease add me to your updates list.`;
+            openWhatsApp(msg);
+            input.value = '';
         };
 
         const scrollToTop = () => {
@@ -704,8 +757,10 @@
             }
 
             products.forEach(prod => {
-                const images = prod.images && prod.images.length > 0 ? prod.images : [prod.image];
-                const mainImg = images[0];
+                const images = Array.isArray(prod.images) && prod.images.length > 0
+                    ? prod.images
+                    : (prod.image ? [prod.image] : ['images/placeholder.jpg']);
+                const mainImg = images[0] || 'images/placeholder.jpg';
                 const hasMultiple = images.length > 1;
                 const stockColor = prod.stock === 'In Stock' ? 'var(--wa-green)' : (prod.stock === 'Pre-order' ? '#FF9500' : '#FF3B30');
                 const moq = prod.moq ? parseInt(prod.moq) : 1;
@@ -718,7 +773,7 @@
                 card.innerHTML = `
                     <div class="product-header">
                         <div class="product-img" onclick="openGallery('${prod.id}')">
-                            <img src="${mainImg}" alt="${prod.name}">
+                            <img src="${mainImg}" alt="${prod.name}" onerror="this.onerror=null;this.src='images/placeholder.jpg';">
                             ${hasMultiple ? `<div class="img-badge"><i class="fa-solid fa-images"></i> ${images.length}</div>` : ''}
                         </div>
                         <div class="product-info">
@@ -806,7 +861,7 @@
                     price: prod.price,
                     qty: qty,
                     moq: prod.moq || 1,
-                    image: (prod.images && prod.images.length > 0) ? prod.images[0] : prod.image
+                    image: Array.isArray(prod.images) && prod.images.length > 0 ? prod.images[0] : (prod.image || 'images/placeholder.jpg')
                 });
                 btn.classList.add('added');
                 btn.innerHTML = '<i class="fa-solid fa-check"></i> Added';
@@ -831,7 +886,7 @@
 
             body.innerHTML = cart.map((item, index) => `
                 <div class="cart-item">
-                    <img src="${item.image}" alt="${item.name}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+                    <img src="${item.image}" alt="${item.name}" onerror="this.onerror=null;this.src='images/placeholder.jpg';" style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
                     <div class="cart-item-info">
                         <div class="cart-item-title">${item.name}</div>
                         <div class="cart-item-price">${item.price}</div>
@@ -897,7 +952,9 @@
         window.openGallery = (id) => {
             const prod = productsDatabase.find(p => p.id === id);
             if(!prod) return;
-            currentGalleryImages = prod.images && prod.images.length > 0 ? prod.images : [prod.image];
+            currentGalleryImages = Array.isArray(prod.images) && prod.images.length > 0
+                ? prod.images
+                : (prod.image ? [prod.image] : ['images/placeholder.jpg']);
             currentGalleryIndex = 0;
             
             renderGalleryImage();
@@ -972,10 +1029,35 @@
             }
         };
 
+        const initSocialLinks = () => {
+            const setLink = (id, url, isExternal) => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                if (url) {
+                    el.href = url;
+                    if (isExternal) {
+                        el.setAttribute('target', '_blank');
+                        el.setAttribute('rel', 'noopener noreferrer');
+                    }
+                } else {
+                    el.removeAttribute('target');
+                    el.removeAttribute('rel');
+                    el.href = '#';
+                }
+            };
+            setLink('social-whatsapp', SOCIAL_LINKS.whatsapp, true);
+            setLink('social-facebook', SOCIAL_LINKS.facebook, true);
+            setLink('social-tiktok', SOCIAL_LINKS.tiktok, true);
+            setLink('social-x', SOCIAL_LINKS.x, true);
+            setLink('social-instagram', SOCIAL_LINKS.instagram, true);
+            setLink('social-phone', `tel:${SOCIAL_LINKS.phone}`, false);
+        };
+
         document.addEventListener('DOMContentLoaded', () => {
             initTheme();
             loadProducts();
             updateCartBadges();
+            initSocialLinks();
         });
 
     </script>
