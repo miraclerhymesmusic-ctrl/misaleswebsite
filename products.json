@@ -13,5 +13,51 @@
       "images/1eyerectangle.jpg",
       "images/product.gif"
     ]
+  },
+  {
+    "id": "e1",
+    "name": "1eyewalllight",
+    "majorCategory": "Electronics",
+    "subcategory": "Speakers",
+    "price": "UGX 55,000",
+    "description": "rectangle&circleAFN",
+    "stock": "In Stock",
+    "moq": 1,
+    "images": [
+      "images/1eyewalllightafnrectanglecircleAFN.jpg",
+      "images/1eyerectangle.jpg",
+      "images/product.gif"
+    ]
+  },  
+  {
+    "id": "e1",
+    "name": "1eyewalllight",
+    "majorCategory": "Electronics",
+    "subcategory": "Speakers",
+    "price": "UGX 55,000",
+    "description": "rectangle&circleAFN",
+    "stock": "In Stock",
+    "moq": 1,
+    "images": [
+      "images/1eyewalllightafnrectanglecircleAFN.jpg",
+      "images/1eyerectangle.jpg",
+      "images/product.gif"
+    ]
+  },  
+  {
+    "id": "e1",
+    "name": "1eyewalllight",
+    "majorCategory": "Electronics",
+    "subcategory": "Speakers",
+    "price": "UGX 55,000",
+    "description": "rectangle&circleAFN",
+    "stock": "In Stock",
+    "moq": 1,
+    "images": [
+      "images/1eyewalllightafnrectanglecircleAFN.jpg",
+      "images/1eyerectangle.jpg",
+      "images/product.gif"
+    ]
   }  
 ]
+       
