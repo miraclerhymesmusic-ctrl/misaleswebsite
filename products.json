@@ -22,7 +22,7 @@
   },
   {
     "id": "c1",
-    "name": "1eyewalllight",
+    "name": "Wistino solarcamera",
     "majorCategory": "Cameras",
     "subcategory": "Solarcameras",
     "price": "UGX 580,000",
@@ -34,7 +34,7 @@
     "3cameras"
     ],
     "stock": "In Stock",
-    "moq": 150,
+    "moq": 1,
     "images": [
       "images/Wistino 3eye solar camera.jpg",
       "images/Wistino 3eye solar camera.jpg",
