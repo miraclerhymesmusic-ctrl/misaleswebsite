@@ -72,7 +72,7 @@
     "keywords": [
     "water",
     "heater,
-    "electronics",
+    "electricheater",
     "sokany"
     ],
     "stock": "In Stock",
@@ -85,7 +85,7 @@
   },
   {
     "id": "e1",
-    "name": "ceiling light ",
+    "name": "ceiling light",
     "majorCategory": "Electrical",
     "subcategory": "Lights",
     "price": "UGX 90,000",
