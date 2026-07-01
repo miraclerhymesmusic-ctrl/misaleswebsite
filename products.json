@@ -63,44 +63,44 @@
     ]
   },
   {
-    "id": "e1",
-    "name": "1eyewalllight",
+    "id": "ew1",
+    "name": "Sokany electric heater",
     "majorCategory": "Electronics",
-    "subcategory": "Speakers",
-    "price": "UGX 55,000",
-    "description": "rectangle&circleAFN",
+    "subcategory": "WaterHeaters",
+    "price": "UGX 280,000",
+    "description": "Boils water so fast",
     "keywords": [
-    "speaker",
-    "wireless",
-    "bluetooth",
-    "music"
+    "water",
+    "heater,
+    "electronics",
+    "sokany"
     ],
     "stock": "In Stock",
-    "moq": 150,
+    "moq": 1,
     "images": [
-      "images/1eyewalllightafnrectanglecircleAFN.jpg",
-      "images/1eyerectangle.jpg",
+      "images/Sokany electric heater.jpg",
+      "images/Sokany electric heater.jpg",
       "images/product.gif"
     ]
   },
   {
     "id": "e1",
-    "name": "1eyewalllight",
-    "majorCategory": "Electronics",
-    "subcategory": "Speakers",
-    "price": "UGX 55,000",
-    "description": "rectangle&circleAFN",
+    "name": "ceiling light ",
+    "majorCategory": "Electrical",
+    "subcategory": "Lights",
+    "price": "UGX 90,000",
+    "description": "ceiling light led brown wood texture",
     "keywords": [
-    "speaker",
-    "wireless",
-    "bluetooth",
-    "music"
+    "lights",
+    "ceiling",
+    "ledpanels",
+    "bulkheads"
     ],
     "stock": "In Stock",
-    "moq": 150,
+    "moq": 1,
     "images": [
-      "images/1eyewalllightafnrectanglecircleAFN.jpg",
-      "images/1eyerectangle.jpg",
+      "images/ceiling light led brown wood texture.jpg",
+      "images/ceiling light led brown wood texture.jpg",
       "images/product.gif"
     ]
   },
