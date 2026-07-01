@@ -42,23 +42,23 @@
     ]
   },
   {
-    "id": "e1",
-    "name": "1eyewalllight",
-    "majorCategory": "Electronics",
-    "subcategory": "Speakers",
-    "price": "UGX 55,000",
-    "description": "rectangle&circleAFN",
+    "id": "v1",
+    "name": "photocell val light",
+    "majorCategory": "Electrical",
+    "subcategory": "Vallight",
+    "price": "UGX 90,000",
+    "description": "photocell auto switch detects day and night",
     "keywords": [
-    "speaker",
-    "wireless",
-    "bluetooth",
-    "music"
+    "duringday",
+    "duringnight",
+    "automaticswitch",
+    "photosensor"
     ],
     "stock": "In Stock",
-    "moq": 150,
+    "moq": 1,
     "images": [
-      "images/1eyewalllightafnrectanglecircleAFN.jpg",
-      "images/1eyerectangle.jpg",
+      "images/photocell val light.jpg",
+      "images/photocell val light.jpg",
       "images/product.gif"
     ]
   },
