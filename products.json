@@ -21,23 +21,23 @@
     ]
   },
   {
-    "id": "e1",
+    "id": "c1",
     "name": "1eyewalllight",
-    "majorCategory": "Electronics",
-    "subcategory": "Speakers",
-    "price": "UGX 55,000",
-    "description": "rectangle&circleAFN",
+    "majorCategory": "cameras",
+    "subcategory": "Solarcameras",
+    "price": "UGX 580,000",
+    "description": "Wistino 3eye solar camera",
     "keywords": [
+    "camera",
+    "solar",
     "speaker",
-    "wireless",
-    "bluetooth",
-    "music"
+    "3cameras"
     ],
     "stock": "In Stock",
     "moq": 150,
     "images": [
-      "images/1eyewalllightafnrectanglecircleAFN.jpg",
-      "images/1eyerectangle.jpg",
+      "images/Wistino 3eye solar camera.jpg",
+      "images/Wistino 3eye solar camera.jpg",
       "images/product.gif"
     ]
   },
