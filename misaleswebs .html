@@ -582,6 +582,12 @@
         <div class="gallery-dots" id="galleryDots"></div>
     </div>
 
+    <!-- Firebase SDKs (compat v9 — works with existing code style) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+
     <script>
         // Data & Core Configurations
         const WA_NUMBER = "+256700964242";
@@ -1005,25 +1011,62 @@
             if(touchEndX > touchStartX + 50) changeGalleryImage(-1); 
         };
 
-        const loadProducts = async () => {
+        // ============================================================
+        // FIREBASE CONFIGURATION
+        // Replace these values with your own Firebase project config.
+        // Get them from: Firebase Console → Project Settings → Your apps
+        // ============================================================
+        const FIREBASE_CONFIG = {
+            apiKey:            "AIzaSyBiOtjk1jD17QrG0TkgLCkWQ-n4rZXiA7Q",
+            authDomain:        "misales-4fa4f.firebaseapp.com",
+            projectId:         "misales-4fa4f",
+            storageBucket:     "misales-4fa4f.firebasestorage.app",
+            messagingSenderId: "340674801261",
+            appId:             "1:340674801261:web:97f287a03df65513759964"
+        };
+
+        // Firebase is loaded via CDN scripts at the bottom of <body>.
+        // loadProducts() is called from DOMContentLoaded after SDK is ready.
+        const loadProducts = () => {
             try {
-                const response = await fetch('./products.json');
-                if (!response.ok) throw new Error(`Status: ${response.status}`);
-                
-                productsDatabase = await response.json();
-                
-                renderMajorCategories();
-                filterData();
-                updateCartBadges();
-                
+                const app  = firebase.initializeApp(FIREBASE_CONFIG);
+                const db   = firebase.firestore();
+
+                // Real-time listener — updates catalogue instantly when
+                // any product is added/edited/deleted in the Admin Dashboard.
+                db.collection("products")
+                  .orderBy("name")
+                  .onSnapshot(
+                    (snapshot) => {
+                        productsDatabase = snapshot.docs.map(doc => ({
+                            id: doc.id,
+                            ...doc.data()
+                        }));
+                        renderMajorCategories();
+                        filterData();
+                        updateCartBadges();
+                    },
+                    (error) => {
+                        console.error("Firestore error:", error);
+                        grid.innerHTML = `
+                            <div class="empty-state">
+                                <i class="fa-solid fa-triangle-exclamation" style="color: #FF3B30;"></i>
+                                <h2>Catalogue Offline</h2>
+                                <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                                    Firebase connection failed. Check your config in misaleswebs.html.
+                                </p>
+                            </div>`;
+                    }
+                );
+
             } catch (error) {
-                console.error("Error fetching products:", error);
+                console.error("Firebase init error:", error);
                 grid.innerHTML = `
                     <div class="empty-state">
                         <i class="fa-solid fa-triangle-exclamation" style="color: #FF3B30;"></i>
                         <h2>Catalogue Offline</h2>
                         <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-                            Make sure <strong>products.json</strong> is in the same folder as this file.
+                            Firebase failed to initialise. Check FIREBASE_CONFIG values.
                         </p>
                     </div>`;
             }
